@@ -23,5 +23,27 @@
                     
         </fieldset>
     </form>
+
+    <h2>formulario sencillo 2 en html5</h2>
+    <form name="formulario2" id="formulario2id" method="" action="">
+        <fieldset>
+            <legend>formulario sencillo 2 con labels</legend>
+            <label for="idcampo3" id="etiqueta1">introduce el nombre del usuario:</label>
+            <input type="text" name="campotexto3id" id="idcampo3" placeholder="aqui va el nombre de usuario">
+            <br>
+            <h3>campos de tipo datalist</h3>
+           lista de SSOO <input list="listaSSOO" id="listaSSOOinput">
+            <datalist id="listaSSOO">
+             <option value="windows 10 h2 2019">windows 10 h2 2019</option>
+             <option value="ubuntu 20.04">ubuntu 20.04</option>
+             <option value="debian 10.0 buster">debian 10.0 buster</option>
+            </datalist>
+            <h3>elemento de tipo boton</h3>
+            <input type="button" onclick="alert('hola a tod@s')" id="elementoboton1" value="saludar">
+            <input type="reset" value="limpiar campos del formulario 2" id="botonresetear">
+        </fieldset>
+
+    </form>
+    <input type="reset" value="limpiar campos del formulario 2" id="botonresetear2">
 </body>
 </html>
