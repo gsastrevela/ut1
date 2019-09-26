@@ -5,23 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ejer1-sesion5</title>
+    <script>
+
+    function mostrarValorRango(valor){
+        document.getElementById('campomostrar').value=valor;
+    }
+
+    </script>
 </head>
 <body>
-    <h1>sesion 5</h1>
-    <h2>Anclas-enlaces internos</h2>
+    <h1>Sesion 5</h1>
+    <h2>Anclas-Enlaces internos</h2>
 
     <form name="formulario completo1" id="formulariocompleto1id" action="" method="">
         <fieldset>
                 <legend>formulario completo</legend>
-                <label for="campotexto1id">nombre:</label>
-                <input type="text" id="campotexto1id" placeholder="introduce el nombre"><br>
-                <label for="areatexto1">comentarios:</label><br>
-                
-                <label for="campobusqueda1id"></label>
+                <label for="campotexto1id">Nombre:</label>
+                <input type="text" id="campotexto1id" placeholder="introduce el nombre" title="debes introducir un nombre" required>
+                <br>
+                <label for="areatexto1id">Comentarios:</label>
+                <br>
                 <textarea name="areatexto1" id="areatexto1id" cols="60" rows="15" placeholder="comentar aqui"></textarea>
-                <input type="search" id="campobusqueda1id" name="campobusqueda1" placeholder="introduce el termino">
-
-
+                <br>
+                <label for="campobusqueda1id">Termino de Busqueda:</label>
+                <input type="search" id="campobusqueda1id" name="campobusqueda1" placeholder="introduce el termino" size="50" maxlength="40">
+                <br>
+                <label fot="campocontrasena1id">Contraseña:</label>
+                <input type="password" id="campocontrasena1id" name="campocontrasena1" placeholder="escribe contraseña" required>
+                <br>
+                <label for="fichero1id">Seleccione fichero:</label>
+                <input type="file" id="fichero1id" name="fichero1">
+                <br>
+                <label for="camponumero1id">campo de tipo numero:</label>
+                <input type="number" id="camponumero1id" name="camponumero1" step="4">
+                <br>
+                <label for="campourl1id">campo de tipo url:</label>
+                <input type="url" id="campourl1id" name="campourl1" required>
+                <br>
+                <label for="campodate1id">campo de tipo fecha:</label>
+                <input type="date" id="campodate1id" name="campodate1">
+                <br>
+                <label for="campoemail1id">campo de tipo email:</label>
+                <input type="email" id="campoemail1id" name="campoemail1" required>
+                <br>
+                <label for="campotime1id">campo de tipo tiempo:</label>
+                <input type="time" id="campotime1id" name="campotime1" required>
+                <br>
+                <label for="campocolor1id">campo de tipo color:</label>
+                <input type="color" id="campocolor1id" name="campocolor1" required>
+                <br>
+                <label for="camporango1id">campo de tipo rango:</label>
+                <input type="range" id="camporango1id" name="camporango1" title="selecciona un valor del rango" min="0" max="10" value="5" step="1" onchange="mostrarValorRango(this.value)" required>
+                <input type="text" id="campomostrar">
+                <br>
+                <label for="campocolor1id">campo de tipo color:</label>
+                <input type="text" id="campodni1id" name="campodni1" placeholder="introduce tu DNI" title="introduce tu dni: 8 numeros y una letra" pattern="[0-9]{8}[a-z]{1}" autofocus required>
+                <br>
+                <input type="submit" value="enviar">
 
         </fieldset>
 
